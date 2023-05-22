@@ -1,0 +1,31 @@
+// GET | returns all users from MongoDB (ID, name, surname, email, age)
+###
+GET http://localhost:5000/api/users
+
+// POST | post users in MongoDB(name, surname, email, age)
+###
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+  "name": "Eironas",
+  "surname": "Grigas",
+  "email": "eironas.grigas@gmail.com",
+  "age": 23
+}
+
+// PUT | update users in MongoDB
+###
+PUT http://localhost:5000/api/users/646a9e89cfe0f5f8535436d4
+Content-Type: application/json
+
+{
+  "name": "John",
+  "surname": "Jonathan",
+  "email": "john@jonathan.com",
+  "age": 23
+}
+
+// DELETE | delete users from MongoDB
+###
+DELETE http://localhost:5000/api/users/646a8d2b8692e8c5fd896a6c
